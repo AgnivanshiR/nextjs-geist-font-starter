@@ -1,0 +1,58 @@
+/* [project]/src/styles/game.css [app-client] (css) */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0)scale(1);
+  }
+
+  50% {
+    transform: translateY(-20px)scale(1.05);
+  }
+}
+
+.animate-float {
+  animation: 3s ease-in-out infinite float;
+}
+
+.bubble {
+  backdrop-filter: blur(2px);
+  transform-origin: center;
+  transition: transform .2s ease-out;
+}
+
+.bubble:hover {
+  transform: scale(1.1);
+}
+
+.bubble:active {
+  transform: scale(.9);
+}
+
+.game-background {
+  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899) 0 0 / 400% 400%;
+  animation: 15s infinite gradient;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+
+  50% {
+    background-position: 100%;
+  }
+
+  100% {
+    background-position: 0%;
+  }
+}
+
+.game-score, .game-timer {
+  text-shadow: 0 2px 4px #0003;
+}
+
+.game-overlay {
+  backdrop-filter: blur(8px);
+}
+
+
+/*# sourceMappingURL=src_styles_game_a53fa412.css.map*/
