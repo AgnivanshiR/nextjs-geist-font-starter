@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///project/sandbox/user-workspace/src/styles/game.css"],"sourcesContent":["@keyframes float {\n  0%, 100% {\n    transform: translateY(0) scale(1);\n  }\n  50% {\n    transform: translateY(-20px) scale(1.05);\n  }\n}\n\n.animate-float {\n  animation: float 3s ease-in-out infinite;\n}\n\n.bubble {\n  backdrop-filter: blur(2px);\n  transform-origin: center;\n  transition: transform 0.2s ease-out;\n}\n\n.bubble:hover {\n  transform: scale(1.1);\n}\n\n.bubble:active {\n  transform: scale(0.9);\n}\n\n.game-background {\n  background: linear-gradient(135deg, #6366f1, #a855f7, #ec4899);\n  background-size: 400% 400%;\n  animation: gradient 15s ease infinite;\n}\n\n@keyframes gradient {\n  0% {\n    background-position: 0% 50%;\n  }\n  50% {\n    background-position: 100% 50%;\n  }\n  100% {\n    background-position: 0% 50%;\n  }\n}\n\n.game-score {\n  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n}\n\n.game-timer {\n  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n}\n\n.game-overlay {\n  backdrop-filter: blur(8px);\n}\n"],"names":[],"mappings":"AAAA;;;;;;;;;;AASA;;;;AAIA;;;;;;AAMA;;;;AAIA;;;;AAIA;;;;;AAMA;;;;;;;;;;;;;;AAYA;;;;AAQA","debugId":null}}]
+}
